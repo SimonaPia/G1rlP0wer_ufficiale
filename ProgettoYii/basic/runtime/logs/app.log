@@ -37153,3 +37153,70 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1687033829.8833
     'REQUEST_TIME' => 1687033829
 ]
+2023-06-17 22:52:33 [::1][-][3sa519lssour97hjhjn9rd8937][error][yii\base\ErrorException:2] yii\base\ErrorException: Trying to access array offset on value of type int in C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\FonteController.php:51
+Stack trace:
+#0 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\FonteController.php(51): yii\base\ErrorHandler->handleError()
+#1 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php(194): app\controllers\FonteController->actionAnalisiFonte()
+#2 [internal function]: app\controllers\GestioneNotiziaController->actionAnalisi()
+#3 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#6 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#7 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#8 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2023-06-17 22:52:32 [::1][-][3sa519lssour97hjhjn9rd8937][info][application] $_GET = [
+    'r' => 'gestione-notizia/analisi'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Studio-5dce4d9c' => '27af451d-5efb-4ea9-ab8a-ab3c21393c10'
+    'PHPSESSID' => '3sa519lssour97hjhjn9rd8937'
+    '_csrf' => '6acc7737b615ef9e3ad1711ccda8bb3d90975fcdf7ab2fb7c675e80d820c9aa0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LhxA2vqP4mJFXLBmYRH5qQyedhVzeC_O\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'notizia' => 'https://www.corriere.it/politica/23_giugno_12/silvio-berlusconi-morto-8ab875a6-08f8-11ee-9252-2eef801783fd.shtml'
+    'indice' => 50
+    'domain' => 'corriere.it'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52985'
+    'SERVER_SOFTWARE' => 'PHP 8.1.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gestione-notizia%2Fanalisi'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gestione-notizia%2Fanalisi'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,it;q=0.8'
+    'HTTP_COOKIE' => 'Studio-5dce4d9c=27af451d-5efb-4ea9-ab8a-ab3c21393c10; PHPSESSID=3sa519lssour97hjhjn9rd8937; _csrf=6acc7737b615ef9e3ad1711ccda8bb3d90975fcdf7ab2fb7c675e80d820c9aa0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LhxA2vqP4mJFXLBmYRH5qQyedhVzeC_O%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1687042352.6058
+    'REQUEST_TIME' => 1687042352
+]

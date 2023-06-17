@@ -82,7 +82,8 @@ class GestioneNotiziaController extends Controller
 
             Yii::$app->session->set('controllo', $controllo);
             
-            $redirectUrl = Url::to(['gestione-notizia/analisi', 'indice' => $indice]);
+            Yii::$app->session->set('indice', $indice);
+            $redirectUrl = Url::to(['gestione-notizia/analisi']);
 
             if ($notizia->save()) {
                 return $this->redirect($redirectUrl);
