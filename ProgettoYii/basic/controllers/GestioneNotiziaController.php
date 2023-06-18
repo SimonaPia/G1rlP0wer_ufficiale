@@ -179,39 +179,46 @@ class GestioneNotiziaController extends Controller
                 echo 'Richiesta fallita con ' . $response->getStatusCode() . ': ' . $response->getContent();
             }
 
+            $messaggio='';
+            $fonti=array();
+            $notiziaAttendibile=array();
+            $indiceFonte=0;
+            $fontiSimili='';
 
             if (stripos($link_notizia, "http") !== false) 
             {
                 if(stripos(substr($link_notizia, -7), ".") !== false)
-                    $categoria=$this->categoria($link_notizia);          
+                    $categoria=$this->categoria($link_notizia);   
+                    
+                // Creazione dell'istanza del controller di destinazione
+                $controller = Yii::$app->createController('fonte')[0];
+
+                // Chiamata alla funzione desiderata del controller di destinazione
+                $indiceFonte=$controller->actionAnalisiFonte();
+
+                
+                //$controllo=Yii::$app->session->get('controllo');
+
+                $argomento=Yii::$app->session->get('argomenti');
+
+                $fonti=$this->fontiArgomentiUguali();
+                $notiziaAttendibile=$this->notiziaPiuAttendibile();
+
+                $fontiInWhitelist=$controller->actionFontiInWhitelist();
+
+                $fontiSimili=0;
+
+                if(empty($fontiInWhitelist))
+                {
+                    if($indiceFonte<80)
+                    {
+                        $fontiSimili=$controller->actionFontiSimili();
+                    }
+                }
 
             }         
 
-            // Creazione dell'istanza del controller di destinazione
-            $controller = Yii::$app->createController('fonte')[0];
-
-            // Chiamata alla funzione desiderata del controller di destinazione
-            $indiceFonte=$controller->actionAnalisiFonte();
-
             
-            //$controllo=Yii::$app->session->get('controllo');
-
-            $argomento=Yii::$app->session->get('argomenti');
-
-            $fonti=$this->fontiArgomentiUguali();
-            $notiziaAttendibile=$this->notiziaPiuAttendibile();
-
-            $fontiInWhitelist=$controller->actionFontiInWhitelist();
-
-            $fontiSimili=0;
-
-            if(empty($fontiInWhitelist))
-            {
-                if($indiceFonte<80)
-                {
-                    $fontiSimili=$controller->actionFontiSimili();
-                }
-            }
         //}
 
         return $this->render('analisi', ['jsonData' => json_encode($data), 'indice' => json_encode($indice), 'messaggio' => $messaggio, 'fonti' => $fonti, 'notiziaAttendibile' => $notiziaAttendibile, 'indiceFonte' => $indiceFonte, 'fontiSimili' => $fontiSimili]);

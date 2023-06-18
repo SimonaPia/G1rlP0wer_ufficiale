@@ -37220,3 +37220,477 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1687042352.6058
     'REQUEST_TIME' => 1687042352
 ]
+2023-06-17 23:50:24 [::1][-][o9khe10g0ptijjm278pal6bo5i][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key -1 in C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\FonteController.php:29
+Stack trace:
+#0 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\FonteController.php(29): yii\base\ErrorHandler->handleError()
+#1 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php(194): app\controllers\FonteController->actionAnalisiFonte()
+#2 [internal function]: app\controllers\GestioneNotiziaController->actionAnalisi()
+#3 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#6 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#7 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#8 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2023-06-17 23:50:23 [::1][-][o9khe10g0ptijjm278pal6bo5i][info][application] $_GET = [
+    'r' => 'gestione-notizia/analisi'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Studio-5dce4d9c' => '27af451d-5efb-4ea9-ab8a-ab3c21393c10'
+    'PHPSESSID' => 'o9khe10g0ptijjm278pal6bo5i'
+    '_csrf' => '4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'notizia' => 'berlusconi è morto'
+    'indice' => 50
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53350'
+    'SERVER_SOFTWARE' => 'PHP 8.1.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gestione-notizia%2Fanalisi'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gestione-notizia%2Fanalisi'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,it;q=0.8'
+    'HTTP_COOKIE' => 'Studio-5dce4d9c=27af451d-5efb-4ea9-ab8a-ab3c21393c10; PHPSESSID=o9khe10g0ptijjm278pal6bo5i; _csrf=4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1687045823.2551
+    'REQUEST_TIME' => 1687045823
+]
+2023-06-17 23:53:23 [::1][-][o9khe10g0ptijjm278pal6bo5i][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $messaggio in C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php:219
+Stack trace:
+#0 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php(219): yii\base\ErrorHandler->handleError()
+#1 [internal function]: app\controllers\GestioneNotiziaController->actionAnalisi()
+#2 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2023-06-17 23:53:22 [::1][-][o9khe10g0ptijjm278pal6bo5i][info][application] $_GET = [
+    'r' => 'gestione-notizia/analisi'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Studio-5dce4d9c' => '27af451d-5efb-4ea9-ab8a-ab3c21393c10'
+    'PHPSESSID' => 'o9khe10g0ptijjm278pal6bo5i'
+    '_csrf' => '4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'notizia' => 'berlusconi è morto'
+    'indice' => 50
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53434'
+    'SERVER_SOFTWARE' => 'PHP 8.1.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gestione-notizia%2Fanalisi'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gestione-notizia%2Fanalisi'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,it;q=0.8'
+    'HTTP_COOKIE' => 'Studio-5dce4d9c=27af451d-5efb-4ea9-ab8a-ab3c21393c10; PHPSESSID=o9khe10g0ptijjm278pal6bo5i; _csrf=4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1687046002.1558
+    'REQUEST_TIME' => 1687046002
+]
+2023-06-17 23:54:52 [::1][-][o9khe10g0ptijjm278pal6bo5i][error][TypeError] TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\views\gestione-notizia\analisi.php:53
+Stack trace:
+#0 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#4 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php(224): yii\base\Controller->render()
+#5 [internal function]: app\controllers\GestioneNotiziaController->actionAnalisi()
+#6 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#8 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#9 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#10 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#11 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2023-06-17 23:54:51 [::1][-][o9khe10g0ptijjm278pal6bo5i][info][application] $_GET = [
+    'r' => 'gestione-notizia/analisi'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Studio-5dce4d9c' => '27af451d-5efb-4ea9-ab8a-ab3c21393c10'
+    'PHPSESSID' => 'o9khe10g0ptijjm278pal6bo5i'
+    '_csrf' => '4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'notizia' => 'berlusconi è morto'
+    'indice' => 50
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53456'
+    'SERVER_SOFTWARE' => 'PHP 8.1.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gestione-notizia%2Fanalisi'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gestione-notizia%2Fanalisi'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,it;q=0.8'
+    'HTTP_COOKIE' => 'Studio-5dce4d9c=27af451d-5efb-4ea9-ab8a-ab3c21393c10; PHPSESSID=o9khe10g0ptijjm278pal6bo5i; _csrf=4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1687046091.8114
+    'REQUEST_TIME' => 1687046091
+]
+2023-06-17 23:55:18 [::1][-][o9khe10g0ptijjm278pal6bo5i][error][TypeError] TypeError: count(): Argument #1 ($value) must be of type Countable|array, int given in C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\views\gestione-notizia\analisi.php:53
+Stack trace:
+#0 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#4 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php(224): yii\base\Controller->render()
+#5 [internal function]: app\controllers\GestioneNotiziaController->actionAnalisi()
+#6 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#8 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#9 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#10 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#11 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2023-06-17 23:55:17 [::1][-][o9khe10g0ptijjm278pal6bo5i][info][application] $_GET = [
+    'r' => 'gestione-notizia/analisi'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Studio-5dce4d9c' => '27af451d-5efb-4ea9-ab8a-ab3c21393c10'
+    'PHPSESSID' => 'o9khe10g0ptijjm278pal6bo5i'
+    '_csrf' => '4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'notizia' => 'berlusconi è morto'
+    'indice' => 50
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53486'
+    'SERVER_SOFTWARE' => 'PHP 8.1.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gestione-notizia%2Fanalisi'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gestione-notizia%2Fanalisi'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,it;q=0.8'
+    'HTTP_COOKIE' => 'Studio-5dce4d9c=27af451d-5efb-4ea9-ab8a-ab3c21393c10; PHPSESSID=o9khe10g0ptijjm278pal6bo5i; _csrf=4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1687046117.6686
+    'REQUEST_TIME' => 1687046117
+]
+2023-06-17 23:55:38 [::1][-][o9khe10g0ptijjm278pal6bo5i][error][TypeError] TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\views\gestione-notizia\analisi.php:56
+Stack trace:
+#0 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#4 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php(224): yii\base\Controller->render()
+#5 [internal function]: app\controllers\GestioneNotiziaController->actionAnalisi()
+#6 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#8 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#9 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#10 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#11 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2023-06-17 23:55:37 [::1][-][o9khe10g0ptijjm278pal6bo5i][info][application] $_GET = [
+    'r' => 'gestione-notizia/analisi'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Studio-5dce4d9c' => '27af451d-5efb-4ea9-ab8a-ab3c21393c10'
+    'PHPSESSID' => 'o9khe10g0ptijjm278pal6bo5i'
+    '_csrf' => '4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'notizia' => 'berlusconi è morto'
+    'indice' => 50
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53497'
+    'SERVER_SOFTWARE' => 'PHP 8.1.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gestione-notizia%2Fanalisi'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gestione-notizia%2Fanalisi'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,it;q=0.8'
+    'HTTP_COOKIE' => 'Studio-5dce4d9c=27af451d-5efb-4ea9-ab8a-ab3c21393c10; PHPSESSID=o9khe10g0ptijjm278pal6bo5i; _csrf=4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1687046137.3259
+    'REQUEST_TIME' => 1687046137
+]
+2023-06-17 23:55:52 [::1][-][o9khe10g0ptijjm278pal6bo5i][error][TypeError] TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\views\gestione-notizia\analisi.php:56
+Stack trace:
+#0 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#4 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php(224): yii\base\Controller->render()
+#5 [internal function]: app\controllers\GestioneNotiziaController->actionAnalisi()
+#6 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#8 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#9 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#10 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#11 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2023-06-17 23:55:52 [::1][-][o9khe10g0ptijjm278pal6bo5i][info][application] $_GET = [
+    'r' => 'gestione-notizia/analisi'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Studio-5dce4d9c' => '27af451d-5efb-4ea9-ab8a-ab3c21393c10'
+    'PHPSESSID' => 'o9khe10g0ptijjm278pal6bo5i'
+    '_csrf' => '4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'notizia' => 'berlusconi è morto'
+    'indice' => 50
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53503'
+    'SERVER_SOFTWARE' => 'PHP 8.1.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gestione-notizia%2Fanalisi'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gestione-notizia%2Fanalisi'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,it;q=0.8'
+    'HTTP_COOKIE' => 'Studio-5dce4d9c=27af451d-5efb-4ea9-ab8a-ab3c21393c10; PHPSESSID=o9khe10g0ptijjm278pal6bo5i; _csrf=4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1687046152.2852
+    'REQUEST_TIME' => 1687046152
+]
+2023-06-17 23:59:21 [::1][-][o9khe10g0ptijjm278pal6bo5i][error][yii\base\ErrorException:2] yii\base\ErrorException: Trying to access array offset on value of type int in C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\FonteController.php:51
+Stack trace:
+#0 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\FonteController.php(51): yii\base\ErrorHandler->handleError()
+#1 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\controllers\GestioneNotiziaController.php(197): app\controllers\FonteController->actionAnalisiFonte()
+#2 [internal function]: app\controllers\GestioneNotiziaController->actionAnalisi()
+#3 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#6 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#7 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#8 C:\Users\pinto\Desktop\PROGETTO\ProgettoYii\basic\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2023-06-17 23:59:20 [::1][-][o9khe10g0ptijjm278pal6bo5i][info][application] $_GET = [
+    'r' => 'gestione-notizia/analisi'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Studio-5dce4d9c' => '27af451d-5efb-4ea9-ab8a-ab3c21393c10'
+    'PHPSESSID' => 'o9khe10g0ptijjm278pal6bo5i'
+    '_csrf' => '4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'notizia' => 'https://tg24.sky.it/mondo/2023/06/16/berlusconi-putin-minuto-silenzio-san-pietroburgo-video'
+    'indice' => 50
+    'domain' => 'sky.it'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53561'
+    'SERVER_SOFTWARE' => 'PHP 8.1.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gestione-notizia%2Fanalisi'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\pinto\\Desktop\\PROGETTO\\ProgettoYii\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gestione-notizia%2Fanalisi'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,it;q=0.8'
+    'HTTP_COOKIE' => 'Studio-5dce4d9c=27af451d-5efb-4ea9-ab8a-ab3c21393c10; PHPSESSID=o9khe10g0ptijjm278pal6bo5i; _csrf=4e90b95f5417bb7885f193839315b5765db43d228efab95fc75394d2f2a8e61ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wd_KlFlCsyg_vlVARfd6IdGJ5qPAMrwo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1687046360.6745
+    'REQUEST_TIME' => 1687046360
+]
